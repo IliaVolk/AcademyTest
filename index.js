@@ -4,6 +4,12 @@
     var answer = document.getElementById("answer");
     answer.innerHTML = "no answer yet";
     button.onclick = function(){
-        answer.innerHTML = "Your input: " + input.value;
+        var inputValue = input.value;
+        
+        if (inputValue === ""){
+            answer.innerHTML = "Your input is empty";
+        }else {
+            answer.innerHTML = "Your input: " + inputValue;
+        }
     }
 })();

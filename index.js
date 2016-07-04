@@ -5,6 +5,9 @@
     answer.innerHTML = "no answer yet";
     button.onclick = function(){
         var number = input.value;
+        if (number === ""){
+            answer.innerHTML = "Your input is empty";
+        }else
         if (number % 2 === 0){
             answer.innerHTML = "This number is odd";
         }else {
